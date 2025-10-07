@@ -15,7 +15,7 @@ from aws_lambda_powertools.event_handler.exceptions import (
 )
 
 import models
-from cognito import Cognito
+from cognito_service import CognitoService
 
 # Initialize Powertools utilities
 tracer = Tracer()
@@ -23,7 +23,7 @@ logger = Logger()
 app = ALBResolver()
 
 # Initialize Cognito service
-cognito = Cognito()
+cognito_service = CognitoService()
 
 @app.get("/health")
 @tracer.capture_method

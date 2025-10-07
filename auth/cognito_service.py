@@ -12,7 +12,7 @@ from models import UserRole, UserResponse
 logger = Logger(child=True)
 
 
-class Cognito:
+class CognitoService:
     """Service class for AWS Cognito operations"""
     
     def __init__(self):
