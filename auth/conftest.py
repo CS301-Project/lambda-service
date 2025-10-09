@@ -97,6 +97,6 @@ def sample_user_data():
     return {
         "username": "testuser",
         "email": "testuser@example.com",
-        "password": "TestPassword123!",
+        "temporary_password": "TestPassword123!",
         "role": "agent"
     }
